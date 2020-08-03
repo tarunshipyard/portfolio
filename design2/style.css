@@ -1,0 +1,16 @@
+body{
+	/*background: #fbd46d;*/
+	/*background-image: url("https://i.pinimg.com/originals/62/79/6d/62796d43171217e1ada6befd97e10327.png");
+	background-repeat: no-repeat;
+	background-position: bottom right; 
+	background-size: 500px;*/
+
+}
+.navbar-brand{
+	color: #dd2c00;
+
+}
+a{
+	color:#00bcd4;
+	font-family: 'Domine', serif;
+}

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://use.fontawesome.com/ccc91f56d1.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap" rel="stylesheet">
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>CreditOnly Payment G</title>
+  </head>
+<body>
+    <br>
+  <div class="container">
+    <!-- Image and text -->
+<nav class="navbar ">
+  <a class="navbar-brand" href="#">
+    CreditOnly
+  </a>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Customer info</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Shiping info</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active text-danger" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Payment Selection</a>
+      </li>
+    </ul>
+    </nav>
+    <div class="tab-content " id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="https://www.shareicon.net/data/512x512/2017/05/11/885935_visa_512x512.png">
+          </div>
+          <div class="col-lg-6">
+            <div class="container">
+  <h2 style="font-family: 'Domine', serif;">Payment Details</h2>
+  <form action="/action_page.php" class="needs-validation" novalidate>
+    <div class="form-group">
+      <label for="uname">CardHolder Name</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter Name" name="uname" minlength="3" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Card Number</label>
+      <input type="password" class="form-control" id="pwd" placeholder="4565 5685 9659 5689" name="pswd" minlength="16" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-inline input-group mb-3">
+        <input type="number" class="form-control " id="email" placeholder="Expiry month" name="exmonth" minlength="2">
+        <input type="number" class="form-control" id="email" placeholder="Expiry Year" name="exmonth" minlength="2">
+        <input type="number" class="form-control" id="email" placeholder="CVV" name="cvv" minlength="2">
+    </div>    
+    <div class="form-group">
+      Payment Amount: <span class="font-weight-bold" style="color: #ff5722;"> Rs13000</span>    
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember" required> I Agree to T/conditions
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </label>
+    </div>
+    <button type="submit" class="btn btn-info btn-block">Pay</button>
+  </form>
+</div>
+
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="container text-lg text-right" style="float:left;">
+      	Gender: male <br>
+
+		Race: White<br>
+
+		Birthday: 11/28/1987 (32 years old)<br>
+
+		Street: 1233 Kidd Avenue<br>
+
+		City, State, Zip: Anchorage, Alaska(AK), 99503 <br>
+
+		Telephone: 907-786-3666<br>
+
+		Mobile: 907-317-6533<br>
+      </div>
+    </div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      	<div class="container" style="">
+      		Most people think of a shipping policy as legal protection, but we actually view it as a sales tool. A clear and enticing shipping policy sets expectations for potential customers and builds trust – leading to higher conversion rates.
+      	</div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
